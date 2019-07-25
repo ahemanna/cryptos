@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cryptos - An encryption decryption utility</title>
+  <style>
+    h1 {
+      font-family: 'Segoe UI'
+    }
+
+    div#body {
+      font-family: 'Times New Roman', Times, serif
+    }
+  </style>
+</head>
+
+<body>
+  <script src='renderFile.js'></script>
+  <div id="title">
+    <h1 id="header">Cryptos!</h1>
+    <i style="font-size: 85%">An encryption-decryption utility.</i>
+    <hr width="75%" align="left" />
+  </div>
+  <div id="body">
+    <form action="#" onsubmit="Javascript:sendForm(event)">
+      <p>Key: <input type="text" name="key" id="key"></p>
+      <!--Add help text-->
+      <p>Text: <input type="text" name="text" id="text"></p>
+      <!--Add help text-->
+      <p><input type="radio" name="userAction" id="encrypt" value="encrypt" checked> Encrypt
+        <input type="radio" name="userAction" id="decrypt" value="decrypt"> Decrypt</p>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <p />
+  <div id="response">&nbsp;</div>
+  <p />
+  <footer id="footer">
+    <hr width="75%" align="left" />
+    <i style="font-size: 85%">Built using node
+      <script>document.write(process.versions.node)</script>,
+      Chrome
+      <script>document.write(process.versions.chrome)</script>,
+      and Electron
+      <script>document.write(process.versions.electron)</script>.
+    </i>
+  </footer>
+</body>
+
+</html>
